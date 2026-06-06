@@ -15,4 +15,6 @@ async def main():
 
 
 if __name__ == "__main__":
+    # asyncio.run() wraps the main() coroutine in a Task to get scheduled to run
+    # on the event loop.
     asyncio.run(main(), debug=True)
