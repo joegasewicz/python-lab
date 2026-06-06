@@ -13,7 +13,6 @@ async def say_after(delay, what):
 
 async def main():
 
-
     async with asyncio.TaskGroup() as tg:
         task1 = tg.create_task(say_after(2, "Finish"))
         task2 = tg.create_task(say_after(1, "Start"))
